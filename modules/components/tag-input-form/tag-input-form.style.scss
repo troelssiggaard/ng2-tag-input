@@ -4,14 +4,28 @@
     border: $input-border;
 
     display: inline;
-    padding: $input-padding;
+    /* padding: $input-padding; */
     vertical-align: middle;
 
     font-size: $input-font-size;
     height: $input-height;
     font-family: $font-family;
+    background-color: transparent;
+    min-width: 380px;
+    width: auto;
+    color: #e1e1e1;
 }
 
 .ng2-tag-input__text-input:focus {
     outline: 0;
+    color: #222222;
+}
+
+.ng2-tag-input__text-input::-webkit-input-placeholder, .ng2-tag-input__text-input::-moz-input-placeholder, .ng2-tag-input__text-input::-ms-input-placeholder, .ng2-tag-input__text-input::-o-input-placeholder  {
+    /*border-bottom: 2px solid map-get($color-primary, 'default');*/
+    color: #e1e1e1;
+}
+
+.ng2-tag-input__text-input:focus::-webkit-input-placeholder, .ng2-tag-input__text-input:focus::-moz-input-placeholder, .ng2-tag-input__text-input:focus::-ms-input-placeholder, .ng2-tag-input__text-input:focus::-o-input-placeholder {
+    color: #c1c1c1;
 }
