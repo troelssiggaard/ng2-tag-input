@@ -1,7 +1,26 @@
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
 .ng2-tag-input.default {
-    border-bottom: 2px solid map-get($color-primary, 'default');
+    /*border-bottom: 2px solid map-get($color-primary, 'default');*/
+    color: #e1e1e1;
+}
+
+.ng2-tag-input.default:before {
+    font-family: 'Material Icons';
+    font-size: 1.6em;
+    content: 'search';
+    padding: 4px 16px 4px 16px;
 }
 
 .default.ng2-tag-input--focused {
-    border-bottom: 2px solid map-get($color-focused, 'default');
+    /*border-bottom: 2px solid map-get($color-focused, 'default');*/
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.default.ng2-tag-input--focused:before {
+    font-family: 'Material Icons';
+    font-size: 1.6em;
+    content: 'search';
+    padding: 4px 16px 4px 16px;
 }
