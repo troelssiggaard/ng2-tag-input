@@ -15,6 +15,9 @@
     background-color: lighten(map_get($color-focused, 'default'), 20%);
     content: '';
     -webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    -ms-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    -moz-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    -o-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
